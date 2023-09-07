@@ -21,7 +21,7 @@ app.get("/endpoint", (req, res) => {
             "current_day": currentDayOfWeek,
             "utc_time": currentUTCTime,
             "track": track,
-            "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
+            "github_file_url": "https://github.com/Cyrus-11/hng-task-1/blob/main/app.js",
             "github_repo_url": "https://github.com/Cyrus-11/hng-task-1",
             "status_code": 200
     }) 
