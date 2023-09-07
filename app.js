@@ -22,7 +22,7 @@ app.get("/endpoint", (req, res) => {
             "utc_time": currentUTCTime,
             "track": track,
             "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
-            "github_repo_url": "https://github.com/username/repo",
+            "github_repo_url": "https://github.com/Cyrus-11/hng-task-1",
             "status_code": 200
     }) 
 });
