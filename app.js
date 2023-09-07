@@ -16,6 +16,9 @@ app.get("/endpoint", (req, res) => {
     if(!slack_name || !track){
         return res.status(400).json ({error: "Both parameters are required"});
     }
+     else{
+        console.log("Server is working");
+     }
     res.status(200).send({   
             "slack_name": slack_name,
             "current_day": currentDayOfWeek,
