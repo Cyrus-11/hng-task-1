@@ -11,7 +11,8 @@ app.get("/api", (req, res) => {
     const currentDayOfWeek = daysOfWeek[new Date().getDay()];
     //get current UTC time
     const currentDate = new Date();
-    const currentUTCTime = currentDate.toISOString();
+    const currentUTCTime = currentDate.toISOString().split(".")[0]+"Z";
+
 
     if(!slack_name || !track){
         return res.status(400).json ({error: "Both parameters are required"});
