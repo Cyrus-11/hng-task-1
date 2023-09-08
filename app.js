@@ -22,7 +22,7 @@ app.get("/api", (req, res) => {
      }
     res.status(200).send({   
             "slack_name": slack_name,
-            "current_day": currentDayOfWeek,
+            "current_day": new Date().toLocaleDateString('en-US', { weekday: 'long' }),
             "utc_time": currentUTCTime,
             "track": track,
             "github_file_url": "https://github.com/Cyrus-11/hng-task-1/blob/main/app.js",
@@ -35,3 +35,6 @@ app.get("/api", (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+
+
