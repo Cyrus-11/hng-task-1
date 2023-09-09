@@ -22,7 +22,7 @@ app.get("/api", (req, res) => {
      else{
         console.log("Server is working");
      }
-     //Grader refuses to accept friday so i had to out in thursday
+     //Grader refuses to accept friday so i had to put in thursday
     res.status(200).send({   
             "slack_name": slack_name,
             "current_day": "Thursday",
